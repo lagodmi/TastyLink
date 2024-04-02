@@ -11,16 +11,10 @@
 - Django REST framework 3.12.4
 - JavaScript
 
-## Процесс запуска проекта (через docker compose):
-- Для разработки, тестирования или демонстрации концепции docker-compose.yml.
-### Запуск проекта:
+## Процесс запуска проекта:
 - [Клонируем репозиторий](https://github.com/lagodmi/foodgram-project-react.git)
-- Создаем файл .env в корне проекта c параметрами указанными в .env.example:
-    - nano .env
-- Выполняем запуск:
-    - docker compose -f docker-compose.yml up -d
-- Делаем миграции и наполняем БД.
-    - docker container exec -it TastyLink_backend sh -c "python manage.py migrate && python manage.py loaddb && python manage.py collectstatic && cp -r /app/collected_static/. /backend_static/static/"
+- [Для разработки, тестирования или демонстрации концепции docker-compose.yml](README/docker.md)
+- [В режиме разработки backend](README/develop.md)
 - [Проект доступен на: http://localhost:8000/](http://localhost:8000/)
 ### Пример запросов:
 - [Страница аутентификации: http://localhost:8000/signin](http://localhost:8000/signin)

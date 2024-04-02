@@ -1,5 +1,9 @@
-для запуска в режиме разработки.
-- заменить настройки PostgreSQL в файле settings
+### Запуск backend:
+
+- Создаем файл .env в корне проекта c параметрами указанными в .env.example:
+    - nano .env
+
+- Заменить настройки PostgreSQL на SQLite в файле settings:
 
 # Настройки для sqlite3.
  DATABASES = {
@@ -12,7 +16,5 @@
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-- запустить backend
-
+- Выполняем запуск:
     python manage.py migrate && python manage.py loaddb && python manage.py runserver
-
