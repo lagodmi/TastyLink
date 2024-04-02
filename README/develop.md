@@ -13,7 +13,7 @@ DATABASES = {
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-'''
+```
 
 - Выполняем запуск:
     - python manage.py migrate && python manage.py loaddb && python manage.py runserver
