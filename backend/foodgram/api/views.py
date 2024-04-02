@@ -1,7 +1,9 @@
 from django.db.models.aggregates import Sum
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
+from django.views.generic import TemplateView
 from djoser.views import UserViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -273,3 +275,17 @@ class RecipeViewSet(ModelViewSet):
         user_filter.delete()
         return Response("Рецепт успешно удален из избранного.",
                         status=HTTP_204_NO_CONTENT)
+
+
+class RedocView(TemplateView):
+    """
+    ViewSet документации.
+    """
+    template_name = "redoc.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['schema_url'] = (
+            settings.BASE_DIR / 'docs' / 'openapi-schema.yml'
+        )
+        return context
