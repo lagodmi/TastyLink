@@ -10,8 +10,8 @@ from .models import (
 )
 
 
-admin.site.site_title = 'Админ-панель сайта "FOODGRAM"'
-admin.site.site_header = 'Админ-панель сайта "FOODGRAM"'
+admin.site.site_title = 'Админ-панель сайта "TastyLink"'
+admin.site.site_header = 'Админ-панель сайта "TastyLink"'
 admin.site.empty_value_display = "Не задано"
 
 
