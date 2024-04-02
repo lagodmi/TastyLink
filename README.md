@@ -12,7 +12,7 @@
 - JavaScript
 
 ## Процесс запуска проекта:
-- [Клонируем репозиторий](https://github.com/lagodmi/foodgram-project-react.git)
+- [Клонировать репозиторий](https://github.com/lagodmi/TastyLink.git){:target="_blank"}
 - [Для разработки, тестирования или демонстрации концепции docker-compose.yml](README/docker.md)
 - [В режиме разработки backend](README/develop.md)
 ## Автор проекта:
