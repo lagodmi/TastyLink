@@ -22,7 +22,9 @@ MEDIA_URL = '/media/'
 ```python3 -m venv venv && source venv/bin/activate```
 
 - установить зависимости:
-```cd backend/foodgram/ && pip install -r requirements.txt```
+```
+cd backend/foodgram/ && pip install -r requirements.txt
+```
 
 - Выполняем запуск:
 ```python manage.py migrate && python manage.py loaddb && python manage.py runserver```
