@@ -19,7 +19,9 @@ MEDIA_URL = '/media/'
 ```
 
 - создать и запустить виртуальное окружение:
-```python3 -m venv venv && source venv/bin/activate```
+```
+python3 -m venv venv && source venv/bin/activate
+```
 
 - установить зависимости:
 ```
@@ -27,6 +29,8 @@ cd backend/foodgram/ && pip install -r requirements.txt
 ```
 
 - Выполняем запуск:
-```python manage.py migrate && python manage.py loaddb && python manage.py runserver```
+```
+python manage.py migrate && python manage.py loaddb && python manage.py runserver
+```
 
 - [Документация по работе с API](http://127.0.0.1:8000/api/redoc/)
