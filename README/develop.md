@@ -4,8 +4,7 @@
 ```
 nano .env
 ```
-
-    - установить DEBUG=True
+DEBUG=True
 
 - Заменить настройки PostgreSQL на SQLite в файле settings (при необходимости):
 
