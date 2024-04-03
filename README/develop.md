@@ -1,7 +1,9 @@
 ### Запуск backend:
 
 - Создаем файл .env в корне проекта c параметрами указанными в .env.example
-    - nano .env
+```
+nano .env
+```
     - установить DEBUG=True
 
 - Заменить настройки PostgreSQL на SQLite в файле settings (при необходимости):
